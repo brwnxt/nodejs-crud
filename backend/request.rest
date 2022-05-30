@@ -1,0 +1,25 @@
+GET http://localhost:3000/diseases
+
+###
+GET http://localhost:3000/diseases/5
+###
+POST http://localhost:3000/diseases
+Content-Type: application/json
+
+{
+    "disease_name": "belibis",
+    "disease_image":"Q3R2R21RQW3DFQF21D",
+    "medicine_advice":"beli jeruk 3"
+
+}
+###
+PATCH http://localhost:3000/diseases/10
+Content-Type: application/json
+
+{
+   "disease_name": "sasa",
+    "disease_image":"Q3R2R21RQW3DFQF21D",
+    "medicine_advice":"beli jeruk 4"
+}
+###
+DELETE http://localhost:3000/diseases/10
