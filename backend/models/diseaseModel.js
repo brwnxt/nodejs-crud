@@ -10,7 +10,8 @@ const {
 const Disease = db.define('disease', {
     id: {
         type: DataTypes.INTEGER,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true
     },
     disease_name: {
         type: DataTypes.STRING
